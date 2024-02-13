@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Change Name</name>
+   <name>Search Product</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>e1ae0f7b-135b-41cc-ab59-dadf22762b29</testCaseGuid>
+   <testCaseGuid>538f7b81-8021-4b87-8813-934daead6801</testCaseGuid>
 </TestCaseEntity>

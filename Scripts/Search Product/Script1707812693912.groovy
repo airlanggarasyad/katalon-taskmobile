@@ -17,32 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-String name = 'Jalu Potter'
-
 Mobile.startApplication('/Users/airlanggafidiyanto/Katalon Studio/assignment-mobile/AndroidApp/app.apk', true)
 
-Mobile.tap(findTestObject('Object Repository/Change Name/android.widget.FrameLayout'), 0)
+Mobile.tap(findTestObject('Object Repository/Search Product/android.widget.TextView'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Change Name/android.widget.FrameLayout (1)'), 0)
+Mobile.setText(findTestObject('Object Repository/Search Product/android.widget.AutoCompleteTextView - Search'), 'Samsung', 0)
 
-Mobile.tap(findTestObject('Object Repository/Change Name/android.widget.TextView - Your Name'), 0)
-
-Mobile.setText(findTestObject('Object Repository/Change Name/android.widget.EditText - Your Name'), name, 0)
-
-Mobile.tap(findTestObject('Object Repository/Change Name/android.widget.Button - OK'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Change Name/android.widget.ImageButton'), 0)
-
-String newName = Mobile.getText(findTestObject('Object Repository/Change Name/android.widget.TextView - Jalu Potter'), 0)
-
-assert newName == name
-
-if(Mobile.verifyElementVisible(findTestObject('Object Repository/Change Name/android.widget.TextView - Jalu Potter'), 0)) {
-	String newName = Mobile.getText(findTestObject('Object Repository/Change Name/android.widget.TextView - Jalu Potter'), 0)
-	assert newName == name
-} else {
-	assert false
-}
+Mobile.tap(findTestObject('Object Repository/Search Product/android.widget.ImageView'), 0)
 
 Mobile.closeApplication()
 

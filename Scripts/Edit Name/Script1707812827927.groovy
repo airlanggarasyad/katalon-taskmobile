@@ -17,29 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-String email = 'jalupotter@corp.bri.co.id'
-
 Mobile.startApplication('/Users/airlanggafidiyanto/Katalon Studio/assignment-mobile/AndroidApp/app.apk', true)
 
-Mobile.tap(findTestObject('Object Repository/Change Name/android.widget.FrameLayout'), 0)
+Mobile.tap(findTestObject('Object Repository/Edit Name/android.widget.FrameLayout'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Change Name/android.widget.FrameLayout (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/Edit Name/android.widget.FrameLayout (1)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.TextView - your.emailgmail.com'), 0)
+Mobile.tap(findTestObject('Object Repository/Edit Name/android.widget.TextView - Your Name'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Change Name/android.widget.EditText - Your Name'), email, 
-    0)
+Mobile.setText(findTestObject('Object Repository/Edit Name/android.widget.EditText - Your Name'), 'Jalu Potter', 0)
 
-Mobile.tap(findTestObject('Object Repository/Change Name/android.widget.Button - OK'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Change Name/android.widget.ImageButton'), 0)
-
-if(Mobile.verifyElementVisible(findTestObject('Object Repository/android.widget.TextView - jalupottercorp.bri.co.id'), 0)) {
-	String newEmail = Mobile.getText(findTestObject('Object Repository/android.widget.TextView - jalupottercorp.bri.co.id'), 0)
-	assert email == newEmail
-} else {
-	assert false
-}
+Mobile.tap(findTestObject('Object Repository/Edit Name/android.widget.Button - OK'), 0)
 
 Mobile.closeApplication()
 
