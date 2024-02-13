@@ -19,15 +19,15 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startApplication('/Users/airlanggafidiyanto/Katalon Studio/assignment-mobile/AndroidApp/app.apk', true)
 
-Mobile.tap(findTestObject('Object Repository/Edit Name/android.widget.FrameLayout'), 0)
+Mobile.tap(findTestObject('Object Repository/Edit Profile Name/android.widget.FrameLayout'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Edit Name/android.widget.FrameLayout (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/Edit Profile Name/android.widget.FrameLayout (1)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Edit Name/android.widget.TextView - Your Name'), 0)
+Mobile.tap(findTestObject('Object Repository/Edit Profile Name/android.widget.TextView - Your Name'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Edit Name/android.widget.EditText - Your Name'), 'Jalu Potter', 0)
+Mobile.setText(findTestObject('Object Repository/Edit Profile Name/android.widget.EditText - Your Name'), 'Jalu Potter', 0)
 
-Mobile.tap(findTestObject('Object Repository/Edit Name/android.widget.Button - OK'), 0)
+Mobile.tap(findTestObject('Object Repository/Edit Profile Name/android.widget.Button - OK'), 0)
 
 Mobile.closeApplication()
 
